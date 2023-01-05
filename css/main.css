@@ -3,6 +3,10 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+html {
+  /*   scroll-behavior: smooth; */
+}
+
 body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -66,7 +70,7 @@ body {
   color: #000000;
 }
 
-.nav__link.active {
+.nav__link:hover {
   color: #606060;
 }
 
@@ -165,6 +169,10 @@ body {
   color: #070707;
 }
 
+.portfolio__link:hover {
+  color: #606060;
+}
+
 /* Footer */
 .footer {
   padding: 90px 0;
@@ -208,7 +216,7 @@ body {
 
 .button:hover,
 .button:focus {
-  background-color: #1a1a1a;
+  background-color: #3b3b3b;
 }
 
 .button:active {

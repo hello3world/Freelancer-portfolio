@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Freelancer portfolio</title>
 </head>
 
@@ -19,11 +22,11 @@
       <div class="header__nav"><a href="#!" class="logo">Kelvin</a>
         <nav id="nav" class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#!" class="nav__link active">Home</a></li>
+            <li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="#!" class="nav__link">Works</a></li>
-            <li class="nav__item"><a href="#!" class="nav__link">Services</a></li>
-            <li class="nav__item"><a href="#!" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#!" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#portfolio" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#nav__link" class="nav__link">Contact</a></li>
           </ul>
           <button id="nav-btn" class="nav__open">
             <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="nav-open"></button>
@@ -46,22 +49,25 @@
     </div>
   </header>
   <!-- section services -->
-  <section class="services">
+  <section id="services" class="services">
     <div class="container">
       <div class="services__row">
-        <div class="services__card"><img src="./img/services/01.svg" alt="service" class="services__img">
+        <div class="services__card" data-aos="fade-up"><img src="./img/services/01.svg" alt="service"
+            class="services__img">
           <h3 class="services__title">UI/UX Design</h3>
           <p class="services__text">Our design is translated into comprehensive digital environments built on latest
             development standards.</p>
         </div>
 
-        <div class="services__card"><img src="./img/services/02.svg" alt="service" class="services__img">
+        <div class="services__card" data-aos="fade-up"><img src="./img/services/02.svg" alt="service"
+            class="services__img">
           <h3 class="services__title">Development</h3>
           <p class="services__text">Our design is translated into comprehensive digital environments built on latest
             development standards.</p>
         </div>
 
-        <div class="services__card"><img src="./img/services/03.svg" alt="service" class="services__img">
+        <div class="services__card" data-aos="fade-up"><img src="./img/services/03.svg" alt="service"
+            class="services__img">
           <h3 class="services__title">software testing</h3>
           <p class="services__text">Our design is translated into comprehensive digital environments built on latest
             development standards.</p>
@@ -70,25 +76,25 @@
     </div>
   </section>
   <!--  -->
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="container">
       <h3 class="portfolio__title">Portfolio</h3>
-      <div class="portfolio__project">
+      <div class="portfolio__project" data-aos="fade-right">
         <img src="./img/portfolio/01.jpg" alt="img" class="portfolio__img">
         <a href="#!" class="portfolio__link">Online fashion store - Homepage</a>
       </div>
-      <div class="portfolio__project">
+      <div class="portfolio__project" data-aos="fade-left">
         <img src="./img/portfolio/02.jpg" alt="img" class="portfolio__img">
         <a href="#!" class="portfolio__link">Reebok Store - Concept</a>
       </div>
-      <div class="portfolio__project">
+      <div class="portfolio__project" data-aos="fade-right">
         <img src="./img/portfolio/03.jpg" alt="img" class="portfolio__img">
         <a href="#!" class="portfolio__link">Braun Landing Page - Concept</a>
       </div>
     </div>
   </section>
   <!-- Footer -->
-  <footer class="footer">
+  <footer id="nav__link" class="footer" data-aos="fade-up">
     <div class="container footer__container">
       <h4 class="footer__title">Contacts</h4>
       <p class="footer__content">Want to know more or just chat?
@@ -114,6 +120,9 @@
         LinkedIn, Instagram, Behance, Dribble</p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/index.js"></script>
 </body>
 
